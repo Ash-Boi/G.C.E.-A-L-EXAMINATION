@@ -14,5 +14,5 @@
   - `python ALs.py`
   
   
-  All Credit Gose to  [@charindithjaindu](https://github.com/charindithjaindu)  <br>
+  All Credits  [@charindithjaindu](https://github.com/charindithjaindu)  <br>
   Edit By  [@Ash_Boi](https://github.com/Ash-Boi)
