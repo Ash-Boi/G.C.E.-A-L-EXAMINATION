@@ -2,7 +2,7 @@ import requests
 import json
 
 
-token='1712594030:AAGyoCn7DqO_KFFJPF399Stz1JrbMepzvRE'
+token='1658530665:AAF2D01REjy0dCXpMXvVCSafqMIDhGmA7Lo'
 method='sendMessage'
 
 def get_data(index_no):
@@ -71,7 +71,7 @@ def get_data(index_no):
 
             response = requests.post(
             url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
-            data={'chat_id':-1001174519094, 'text': msg}
+            data={'chat_id':-1001426061464, 'text': msg}
             ).json() 
     except:
         print('err')
@@ -82,5 +82,5 @@ for i in range(1800004,1999999):
 
 response = requests.post(
         url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
-        data={'chat_id':-1001174519094, 'text': 'Done start again'}
+        data={'chat_id':-1001426061464, 'text': 'Done start again'}
         ).json()
