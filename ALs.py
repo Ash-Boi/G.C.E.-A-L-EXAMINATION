@@ -2,7 +2,7 @@ import requests
 import json
 
 
-token='1658530665:AAF2D01REjy0dCXpMXvVCSafqMIDhGmA7Lo'
+token='Bot token එක මෙතනට දාගන්න'
 method='sendMessage'
 
 def get_data(index_no):
@@ -71,16 +71,16 @@ def get_data(index_no):
 
             response = requests.post(
             url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
-            data={'chat_id':-1001426061464, 'text': msg}
+            data={'chat_id':-Channel ID එක දන්න, 'text': msg}
             ).json() 
     except:
         print('err')
 
 
-for i in range(1800004,1999999):
-	get_data(i)
+for i in range(1800000,1999999):
+    get_data(i)
 
 response = requests.post(
         url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
-        data={'chat_id':-1001426061464, 'text': 'Done start again'}
+        data={'chat_id':-Channel ID එක දන්න, 'text': 'Done start again'}
         ).json()
