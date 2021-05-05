@@ -2,7 +2,7 @@ import requests
 import json
 
 
-token='Bot token එක මෙතනට දාගන්න'
+token='Bot ගෙ api key එක මෙතනට දාන්න'
 method='sendMessage'
 
 def get_data(index_no):
@@ -39,7 +39,9 @@ def get_data(index_no):
             S10=('SUB2')
             S11=('SUB3')
             S12=('✅')
-
+            S13=('✅🇱🇰script edit by @ash_boi🇱🇰✅')
+            S14=('මුළු මෙව්ව එක')
+            
             print(S1)
             print(S2)
             print(S3)
@@ -52,6 +54,7 @@ def get_data(index_no):
             print(S10)
             print(S11)
             print(S12)
+            print(S13)
             print(year)
             print(name)
             print(indexNo)
@@ -67,20 +70,20 @@ def get_data(index_no):
             print(Sub3name)
             print(Sub3result)
         
-            msg=S1+' 👉 '+year+''+S12+'\n'+S2+' 👉 '+name+'\n'+S3+' 👉 '+indexNo+'\n'+S4+' 👉 '+nic+'\n'+S5+' 👉 '+districtRank+'\n'+S6+' 👉 '+islandRank+'\n'+S7+' 👉 '+zScore+'\n'+S8+' 👉 '+stream+'\n'+S9+' 👉 '+Sub1name+' ➡️ '+Sub1result+'\n'+S10+' 👉 '+Sub2name+' ➡️ '+Sub2result+'\n'+S11+' 👉 '+Sub3name+' ➡️ '+Sub3result
+            msg=S1+' 👉 '+year+''+S12+'\n'+S2+' 👉 '+name+'\n'+S3+' 👉 '+indexNo+'\n'+S4+' 👉 '+nic+'\n'+S5+' 👉 '+districtRank+'\n'+S6+' 👉 '+islandRank+'\n'+S7+' 👉 '+zScore+'\n'+S8+' 👉 '+stream+'\n'+S9+' 👉 '+Sub1name+' ➡️ '+Sub1result+'\n'+S10+' 👉 '+Sub2name+' ➡️ '+Sub2result+'\n'+S11+' 👉 '+Sub3name+' ➡️ '+Sub3result+'\n'+S14+' 👉 '+Sub1result+' '+Sub2result+' '+Sub3result+'\n'+S13
 
             response = requests.post(
             url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
-            data={'chat_id':-Channel ID එක දන්න, 'text': msg}
+            data={'chat_id':-Channel ID එක, 'text': msg}
             ).json() 
     except:
         print('err')
 
 
-for i in range(1800000,1999999):
-    get_data(i)
+for i in range(1820914,1999999):
+	get_data(i)
 
 response = requests.post(
         url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
-        data={'chat_id':-Channel ID එක දන්න, 'text': 'Done start again'}
+        data={'chat_id':-Channel ID එක, 'text': 'Done start again'}
         ).json()
