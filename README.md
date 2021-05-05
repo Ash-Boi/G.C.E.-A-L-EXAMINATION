@@ -13,7 +13,7 @@
 
   - `python ALs.py`
   
-  ##Use CMD
+##  Use CMD
   
   All Credits  [@charindithjaindu](https://github.com/charindithjaindu)  <br>
   Edit By  [@Ash_Boi](https://github.com/Ash-Boi)
