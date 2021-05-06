@@ -27,6 +27,10 @@ def get_data(index_no):
             Sub2result=jsondata['subjectResults'][1]['subjectResult']
             Sub3name=jsondata['subjectResults'][2]['subjectName']
             Sub3result=jsondata['subjectResults'][2]['subjectResult']
+            Sub4name=jsondata['subjectResults'][3]['subjectName']
+            Sub4result=jsondata['subjectResults'][3]['subjectResult']
+            Sub5name=jsondata['subjectResults'][4]['subjectName']
+            Sub5result=jsondata['subjectResults'][4]['subjectResult']
             S1=('Year')
             S2=('Name')
             S3=('Index No')
@@ -69,8 +73,12 @@ def get_data(index_no):
             print(Sub2result)
             print(Sub3name)
             print(Sub3result)
-        
-            msg=S1+' 👉 '+year+''+S12+'\n'+S2+' 👉 '+name+'\n'+S3+' 👉 '+indexNo+'\n'+S4+' 👉 '+nic+'\n'+S5+' 👉 '+districtRank+'\n'+S6+' 👉 '+islandRank+'\n'+S7+' 👉 '+zScore+'\n'+S8+' 👉 '+stream+'\n'+S9+' 👉 '+Sub1name+' ➡️ '+Sub1result+'\n'+S10+' 👉 '+Sub2name+' ➡️ '+Sub2result+'\n'+S11+' 👉 '+Sub3name+' ➡️ '+Sub3result+'\n'+S14+' 👉 '+Sub1result+' '+Sub2result+' '+Sub3result+'\n'+S13
+            print(Sub4name)
+            print(Sub4result)
+            print(Sub5name)
+            print(Sub5result)
+	
+            msg=S1+' 👉 '+year+''+S12+'\n'+S2+' 👉 '+name+'\n'+S3+' 👉 '+indexNo+'\n'+S4+' 👉 '+nic+'\n'+S5+' 👉 '+districtRank+'\n'+S6+' 👉 '+islandRank+'\n'+S7+' 👉 '+zScore+'\n''\n'+S8+' 👉 '+stream+'\n''\n'+S9+' 👉 '+Sub1name+' ➡️ '+Sub1result+'\n'+S10+' 👉 '+Sub2name+' ➡️ '+Sub2result+'\n'+S11+' 👉 '+Sub3name+' ➡️ '+Sub3result+'\n''\n'+Sub4name+' ➡️ '+Sub4result+'\n'+Sub5name+' ➡️ '+Sub5result+'\n''\n'+S14+' 👉 '+Sub1result+' '+Sub2result+' '+Sub3result+'\n'+S13
 
             response = requests.post(
             url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
