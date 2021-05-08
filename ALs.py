@@ -88,7 +88,7 @@ def get_data(index_no):
         print('err')
 
 
-for i in range(1820914,1999999):
+for i in range(1000000,9999999):
 	get_data(i)
 
 response = requests.post(
